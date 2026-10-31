@@ -18,23 +18,23 @@ export function Services() {
   return (
     <section id="servicios" className="section services white" aria-labelledby="serv-title">
       <div className="wrap services-grid">
+        <div className="section-head services-head" data-reveal>
+          <h2 id="serv-title">Todo lo que necesita, bajo un mismo árbol</h2>
+          <p className="lead">
+            De la primera vacuna a la cirugía, sin mandarlo a otra parte para un examen. Precios
+            claros desde el principio.
+          </p>
+        </div>
         <div className="services-photo" data-reveal="photo">
           <Image
             src="/photos/consulta-maltes.jpg"
             alt="Veterinaria con estetoscopio junto a un perro maltés feliz"
             fill
-            sizes="(min-width: 1100px) 40vw, 86vw"
+            sizes="(min-width: 1100px) 40vw, 92vw"
             quality={70}
           />
         </div>
-        <div>
-          <div className="section-head" data-reveal>
-            <h2 id="serv-title">Todo lo que necesita, bajo un mismo árbol</h2>
-            <p className="lead">
-              De la primera vacuna a la cirugía, sin mandarlo a otra parte para un examen. Precios
-              claros desde el principio.
-            </p>
-          </div>
+        <div className="services-body">
           <ul className="service-list">
             {services.map((s, i) => (
               <li

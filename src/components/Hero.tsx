@@ -14,14 +14,14 @@ const copy: Record<
     sub: "Clínica veterinaria en Cedritos. Lo revisamos con calma, te explicamos todo sin enredos y le damos premio aunque no se lo haya ganado.",
     note: "Sala de espera con agua fresca y galletas de hígado",
     alt: "Beagle sonriente con la lengua afuera sobre un fondo verde",
-    detail: "Paseo corto antes de la consulta: llega más tranquilo",
+    detail: "Un paseo corto antes de la consulta y llega mucho más tranquilo.",
   },
   gato: {
     title: "Aquí hasta los gatos ronronean",
     sub: "Clínica veterinaria en Cedritos con sala solo para gatos, sin ladridos ni afán. Ella decide cuándo salir del guacal.",
     note: "Consultorio felino con feromonas y cero perros a la vista",
     alt: "Gato blanco y negro asomado sobre una mesa con fondo verde",
-    detail: "Trae su cobija: el olor a casa la calma",
+    detail: "Trae su cobija en el guacal: el olor a casa la calma.",
   },
 };
 
@@ -76,8 +76,11 @@ export default function Hero() {
           </a>
         </div>
 
-        <p key={`d-${species}`} className={`hero-detail${swap}`}>
-          <Leaf /> {c.detail}
+        <p key={`d-${species}`} className={`hero-tip${swap}`}>
+          <Leaf />
+          <span>
+            <strong>Tip:</strong> {c.detail}
+          </span>
         </p>
 
         <div className="hero-photo-wrap">

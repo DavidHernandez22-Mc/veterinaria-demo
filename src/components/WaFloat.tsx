@@ -34,11 +34,13 @@ export default function WaFloat() {
       target="_blank"
       rel="noopener noreferrer"
       data-hidden={hidden}
-      aria-label="Escribir por WhatsApp"
+      aria-label="Escríbenos por WhatsApp"
       tabIndex={hidden ? -1 : undefined}
     >
       <WhatsAppIcon />
-      <span className="wa-label">¿Hablamos?</span>
+      <span className="wa-tip" aria-hidden="true">
+        Escríbenos por WhatsApp
+      </span>
     </a>
   );
 }
