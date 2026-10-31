@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Arrayán Clínica Veterinaria · demo
 
-## Getting Started
+Demo web of a fictional veterinary clinic in Cedritos, Bogotá, made for David's web design portfolio.
 
-First, run the development server:
+**URL:** https://arrayan-vet-demo.vercel.app
+
+## What it does
+
+- **Dog or cat?** in the hero: changes the photo, the headline and visual details.
+- **Your pet's calendar:** a timeline of vaccines, deworming and check-ups, sent over WhatsApp or downloaded as an `.ics` file.
+- **Is it an emergency?:** a warning-signs checklist with a clear answer and an emergency WhatsApp button.
+- **4-step booking:** pet → service → day and time slot → owner's details, ending in an ordered WhatsApp message.
+- Monthly health plans, services with "from" prices in COP, team, first visit, testimonials and FAQ.
+
+## Stack
+
+Next.js 16 (App Router, static export on Vercel), React 19, TypeScript, CSS with no UI libraries, `next/font` and `next/image`.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Notes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Fictional business: names, prices, team and testimonials are illustrative.
+- Reference photos: Unsplash (Unsplash license) and one photo by Nenad Stojkovic (CC BY 2.0, Wikimedia Commons). Credits are in the site footer.
