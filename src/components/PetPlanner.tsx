@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useSyncExternalStore } from "react";
+import PrivacyNote from "./PrivacyNote";
 import { CatHead, DogHead, Leaf, ServiceIcon, WhatsAppIcon } from "./Icons";
 import { buildICS, buildPlan, formatDate, formatShort, type PlanItem } from "@/lib/schedule";
 import { waDemo, type Species } from "@/lib/site";
@@ -210,6 +211,7 @@ export default function PetPlanner() {
             <button className="btn btn--forest btn--big btn--block" type="submit">
               {plan ? "Actualizar su calendario" : "Ver su calendario"}
             </button>
+            <PrivacyNote />
           </div>
         </form>
 

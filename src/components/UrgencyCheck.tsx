@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import PrivacyNote from "./PrivacyNote";
 import { Leaf, PawLeaf, WhatsAppIcon } from "./Icons";
 import { waDemo } from "@/lib/site";
 
@@ -88,6 +89,7 @@ export default function UrgencyCheck() {
           >
             No veo ninguna de estas señales
           </button>
+          <PrivacyNote />
         </div>
 
         <div className="verdict" data-state={state} aria-live="polite" data-reveal>

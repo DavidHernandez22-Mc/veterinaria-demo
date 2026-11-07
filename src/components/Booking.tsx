@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState, useSyncExternalStore } from "react";
+import PrivacyNote from "./PrivacyNote";
 import { CatHead, DogHead, WhatsAppIcon } from "./Icons";
 import { services, waDemo, type Species } from "@/lib/site";
 
@@ -296,6 +297,7 @@ export default function Booking() {
                 </a>
               )}
             </div>
+            <PrivacyNote />
           </form>
         </div>
       </div>

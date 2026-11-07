@@ -2237,3 +2237,20 @@ details[open] .plus::after {
 .hero[data-species="gato"] .species button[aria-pressed="true"] {
   border-radius: 1.25em 0 1.25em 0;
 }
+
+/* ---------- Demo privacy notice ---------- */
+.privacy-note {
+  margin-top: 0.85rem;
+  max-width: 52ch;
+  font-size: var(--step-small);
+  line-height: 1.45;
+  color: inherit;
+}
+.privacy-note a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.privacy-note a:hover {
+  text-decoration-thickness: 2px;
+}
