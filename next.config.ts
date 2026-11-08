@@ -1,10 +1,10 @@
 import type { NextConfig } from "next";
 
+// Fully static site: `next build` writes plain HTML/CSS/JS to ./out,
+// served by Cloudflare Workers static assets (see wrangler.jsonc).
 const nextConfig: NextConfig = {
-  images: {
-    formats: ["image/avif", "image/webp"],
-    qualities: [70, 75],
-  },
+  output: "export",
+  images: { unoptimized: true },
 };
 
 export default nextConfig;
