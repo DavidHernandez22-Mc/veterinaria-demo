@@ -1,4 +1,4 @@
-export const PRIVACY_URL = "https://david-web.castrod2207.workers.dev/privacidad/";
+export const PRIVACY_URL = "https://davidhcwebs.com/privacidad/";
 
 /** Shown beside every form whose data ends up in a WhatsApp message to David. */
 export default function PrivacyNote() {
