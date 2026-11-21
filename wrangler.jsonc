@@ -2,9 +2,15 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "veterinaria-demo",
   "compatibility_date": "2026-11-01",
+  "main": "worker/index.mjs",
   "workers_dev": true,
+  // Dominio propio; la dirección de workers.dev redirige con 301 (worker/index.mjs).
+  "routes": [{ "pattern": "veterinaria.davidhcwebs.com", "custom_domain": true }],
   "assets": {
     "directory": "./out",
+    "binding": "ASSETS",
+    // Todo pasa por worker/index.mjs para redirigir workers.dev al dominio propio.
+    "run_worker_first": true,
     "not_found_handling": "404-page"
   }
 }

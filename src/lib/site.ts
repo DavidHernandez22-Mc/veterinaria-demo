@@ -1,4 +1,4 @@
-export const SITE_URL = "https://arrayan-vet-demo.vercel.app";
+export const SITE_URL = "https://veterinaria.davidhcwebs.com";
 export const WA_NUMBER = "573008564773";
 export const WA_GENERAL =
   "Hola David, vi tu demo de la veterinaria y me interesa una web así para mi negocio.";

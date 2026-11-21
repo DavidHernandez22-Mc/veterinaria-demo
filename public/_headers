@@ -1,0 +1,10 @@
+# Encabezados de Cloudflare Workers (static assets): https://developers.cloudflare.com/workers/static-assets/headers/
+# CSP: Next.js usa scripts y estilos en línea; Cloudflare Web Analytics (activado en la zona
+# davidhcwebs.com) inserta su beacon. frame-ancestors: solo la web de David muestra la demo en su visor.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors https://davidhcwebs.com
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()
+

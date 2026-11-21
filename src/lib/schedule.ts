@@ -215,7 +215,7 @@ export function buildICS(items: PlanItem[], petName: string, now = new Date()) {
     const end = new Date(it.date.getTime() + DAY);
     lines.push(
       "BEGIN:VEVENT",
-      `UID:arrayan-${icsDate(it.date)}-${i}-${Math.random().toString(36).slice(2, 8)}@arrayan-vet-demo.vercel.app`,
+      `UID:arrayan-${icsDate(it.date)}-${i}-${Math.random().toString(36).slice(2, 8)}@veterinaria.davidhcwebs.com`,
       `DTSTAMP:${stamp}`,
       `DTSTART;VALUE=DATE:${icsDate(it.date)}`,
       `DTEND;VALUE=DATE:${icsDate(end)}`,

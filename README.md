@@ -2,7 +2,7 @@
 
 Demo web of a fictional veterinary clinic in Cedritos, Bogotá, made for David's web design portfolio.
 
-**URL:** https://arrayan-vet-demo.vercel.app
+**URL:** https://veterinaria.davidhcwebs.com (Cloudflare Workers, Worker `veterinaria-demo`; `veterinaria-demo.castrod2207.workers.dev` redirige con 301)
 
 ## What it does
 
