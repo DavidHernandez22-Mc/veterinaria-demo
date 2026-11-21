@@ -1,5 +1,5 @@
 export const SITE_URL = "https://veterinaria.davidhcwebs.com";
-export const WA_NUMBER = "573008564773";
+export const WA_NUMBER = "573244281553";
 export const WA_GENERAL =
   "Hola David, vi tu demo de la veterinaria y me interesa una web así para mi negocio.";
 export const WA_DEMO_PREFIX = "Hola David, probé tu demo de la veterinaria:";
